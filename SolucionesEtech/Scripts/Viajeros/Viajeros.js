@@ -24,7 +24,7 @@
                            <button type="button" class="btn btn-info dropdown-toggle btn-sm" style='width: 65px;padding: 0px;height: 28px;' data-toggle="dropdown" aria-expanded="false">Accion<span class="caret"></span></button>
                         <div class="dropdown-menu"  role="menu">     
                                 <a class="dropdown-item btn-verViajes" data-toggle="modal" data-target=".bd-viajes-modal"  >
-                                    Ver viajes
+                                    Realizar viaje
                                     </a>
                             <a class="dropdown-item btn-modificar" data-toggle="modal" data-target=".bd-new-modal" >
                                 Modificar
