@@ -4581,6 +4581,7 @@
     <Content Include="Content\vendor\x-editable\.bower.json" />
     <Content Include="Content\vendor\x-editable\.gitignore" />
     <Content Include="Content\vendor\x-editable\bower.json" />
+    <Content Include="BaseDatos\solucionesetech.bak" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
