@@ -1,0 +1,195 @@
+﻿
+@{
+    ViewBag.Title = "Viajes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .tdCentrado {
+        text-align: center;
+    }
+</style>
+<div id="tabBody" class="tab-content">
+    <div class="row">
+        <div class="col-md-6 card-header no-bg b-a-0">
+            <h3>Viajes</h3>
+        </div>
+        <div class="col-md-6" style="text-align:right">
+            <button class="btn btn-primary btn-round m-r-xs m-b-xs" id="btNuevoViaje" data-toggle="modal" data-target=".bd-new-modal">
+                Agregar Viaje
+            </button>
+        </div>
+    </div>
+    <div class="card-block">
+        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap4 no-footer">
+            <div class="row">
+                <div class="col-md-12 table-responsive">
+                    <table class="table table-bordered datatable dataTable no-footer" width="100%" id="dt-Viajes" role="grid" aria-describedby="DataTables_Table_0_info">
+                        <thead>
+                            <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="" style="width: 140px;">
+                                    Código de Viaje
+                                </th>
+
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                    Número de plazas
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                    Origen
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                    Destino
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                    precio
+                                </th>                                
+                                <th class="sorting tdCentrado" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                    <i class="material-icons">flash_on</i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-new-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="modalViaje" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Agregar nuevo Viaje</h4>
+            </div>
+            <div class="modal-body">
+                <div id="tableEducation" class="align-middle">
+                    <div class="tsf-step-content" style="height: auto; overflow-y: auto;">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="inputjobTitle">
+                                    Código de Viaje
+                                </label>
+                                <input class="form-control " id="txtCodigo" placeholder="12345678 " required="" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputVacancies">
+                                    Número de plazas
+                                </label>
+                                <input class="form-control num-va" id="txtNumeroPlazas" placeholder="Pedro Perez" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputVacancies">
+                                    Origen
+                                </label>
+                                <select id="cbOrigen" class="form-control browser-default custom-select custom-select-lg mb-3">
+                                    <option value="0" selected>Seleccionar Aereopuerto</option>
+                                    @foreach (var item in ViewBag.AereoPuertos)
+                                    {
+                                        <option value="@item.Id">@item.Nombre</option>
+
+                                    }
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputVacancies">
+                                    Destino
+                                </label>
+                                <select id="cbDestino" class="form-control browser-default custom-select custom-select-lg mb-3">
+                                    <option value="0" selected>Seleccionar Aereopuerto</option>
+                                    @foreach (var item in ViewBag.AereoPuertos)
+                                    {
+                                        <option value="@item.Id">@item.Nombre</option>
+
+                                    }
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputVacancies">
+                                    Precio
+                                </label>
+                                <input class="form-control num-va" id="txtPrecio" placeholder="0412-1961020" type="text">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-grey" data-dismiss="modal">Cancelar</button>
+                <button id="btGuardar" type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-viajeros-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="modalViajes" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="myModalViajesLabel">Viajes</h4>
+            </div>
+            <div class="modal-body">
+                <div class="align-middle">
+                    <div class="tsf-step-content" style="height: auto; overflow-y: auto;">
+                        <div class="col-lg-12">
+                            <label for="inputjobTitle">
+                                Viajes realizados
+                            </label>
+                            <table class="table table-bordered datatable dataTable no-footer" width="100%" id="dt-Viajeros" role="grid" aria-describedby="DataTables_Table_0_info">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="" style="width: 140px;">
+                                            Cédula
+                                        </th>
+
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                            Nombre
+                                        </th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                            Dirección
+                                        </th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="">
+                                            Telefono
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-grey" data-dismiss="modal">Cancelar</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+
+    <script type="text/javascript">
+        //URL GET
+        var urlObtenerViajes = '@Url.Action("ObtenerViajes", "Viajes")';
+        var urlObtenerViaje = '@Url.Action("ObtenerViaje", "Viajes")';
+        var urlEliminarViaje = '@Url.Action("EliminarViaje", "Viajes")';
+        var urlModificarViaje = '@Url.Action("ModificarViaje", "Viajes")';
+        var urlInsertarViaje = '@Url.Action("InsertarViaje", "Viajes")';
+        var urlObtenerViajerosxViaje = '@Url.Action("ObtenerViajerosxViaje", "ViajerosxViajes")';
+    </script>
+    @Scripts.Render("~/Scripts/Viajes/Viajes.js")
+
+
+}
+
+

@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->   
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+        
+        body h4{
+            font-size: 24px!important;
+        }
+        
+        .row{
+            display: flex!important;
+            width: 100%!important;
+        }
+        
+        .col-md-4{
+            width: 30%!important;
+        }
+        
+        .col-md-6{
+            width: 50%!important;
+        }
+        
+        .col-md-8{
+            width: 70%!important;
+        }
+        
+        #row1 h4, #row1 p, #row3 h4, #row3 p{
+            padding-right: 80px!important;
+        }
+        
+        #row2 h4, #row2 p{
+            padding-left: 80px!important;
+        }
+        
+        #presentacion, #tienda{
+           background-image: url("https://maguiblock.com/wp-content/uploads/2020/10/backgroundbody.jpg")!important;
+        }
+        
+        #div-magui-logo{
+            text-align: center!important;
+            padding: 25px!important;
+        }
+        
+        #div-magui-logo img{
+            width: 20%!important;
+        }
+        
+        #div-body1{
+            padding: 20px 80px!important;
+        }
+        
+        #div-header1{
+            text-align: center!important;
+            padding: 0px 50px!important;
+        }
+        
+        #div-footer1{
+            padding: 10px 80px!important;
+            text-align:center!important;
+            font-size: 30px!important;
+            font-family: 'Sacramento'!important; 
+            font-size: 30px!important; 
+        }
+        
+        #youtube {
+            background-image: url("https://maguiblock.com/wp-content/uploads/2020/10/youtube-bg.jpg")!important;
+        }           
+        
+        #div-header2{    
+            text-align: justify!important;
+            padding: 20px!important;
+        }
+        
+        #div-header22{
+            padding: 0px 80px!important;
+            text-align: center!important;
+        }
+        
+        #div-body2{
+            text-align: center!important;
+            padding: 20px!important; 
+            background-color: #EEBA68!important;
+        }
+        
+        #div-footer2{
+            text-align: center!important;
+            padding: 20px!important;
+        }
+        
+         #div-header2{
+            padding: 50px 80px 20px 80px!important;
+        }
+        
+        #div-footer2{
+            padding: 50px 80px 0px 80px!important;
+        }
+                
+        
+        #div-header3{
+            padding: 50px 80px 20px 80px!important;
+        }
+        
+        #div-body3{
+            padding: 30px 0px!important;
+        }
+        
+        #div-header4{
+            padding: 50px 80px 20px 80px!important;
+            text-align: center!important;
+        }
+        
+        #div-body4{
+            padding: 20px 80px!important;
+        }
+        
+        #div-footer4{
+            padding: 20px 80px!important;
+        }
+        
+        #btn-tienda:hover{
+            color: #fff!important;
+            background-color:#DD4E8B!important;
+            border-color:#DD4E8B!important;
+            transition: 0.3s!important;            
+        }
+        
+        .imgcol1{
+            background: rgb(9,9,121)!important;
+            background: linear-gradient(180deg, rgba(9,9,121,0) 40%, rgba(253,160,0,1) 40%, rgba(253,160,0,1) 50%, rgba(253,160,0,1) 60%, rgba(0,212,255,0) 60%)!important;
+            background-size: 50% 100%!important;
+            background-repeat: no-repeat!important;
+            background-position: left center!important;
+        }
+        
+        .imgcol2{
+            background: rgb(9,9,121)!important;
+            background: linear-gradient(180deg, rgba(9,9,121,0) 40%, rgba(253,160,0,1) 40%, rgba(253,160,0,1) 50%, rgba(253,160,0,1) 60%, rgba(0,212,255,0) 60%)!important;
+            background-size: 50% 100%!important;
+            background-repeat: no-repeat!important;
+            background-position: right center!important;
+        }    
+         
+        #footer{
+            background-color: #d78eae!important;
+            padding: 40px!important;
+        }
+        
+        #footer img{
+            margin: 5px!important;
+        }
+        @media only screen and (max-width: 890px) {
+
+            #div-magui-logo img{
+            width: 33%!important;
+            }
+            
+            #div-body1{
+            padding: 20px 50px!important;
+            }
+            
+            #div-body2{
+                padding: 20px 30px!important;
+            }
+            
+            #div-footer1{
+            padding: 10px 20px!important;            
+            }
+            
+            #div-header2{
+                padding: 50px 50px 20px 45px!important;
+            }
+            
+            #div-header22{
+                padding: 0px 25px 45px 25px!important;
+            }
+            
+            #div-footer2{
+            padding: 50px 30px 20px 30px!important;
+            }         
+            
+            #div-footer2 img{
+            width: 80%!important;
+            }
+            
+            .row{
+                display: block!important;
+            }
+            
+            .col-md-4{
+            width: 100%!important;
+            }
+
+            .col-md-6{
+                width: 100%!important;
+            }
+
+            .col-md-8{
+                width: 100%!important;
+            }
+            
+            .col-md-8 p, .col-md-8 h4{
+                padding: 0px 50px!important;
+            }
+            
+            #row2{
+                display: none!important;
+            }
+            
+            #row22{               
+                display: block!important;
+            }   
+            
+            .imgcol1{
+            background: rgb(9,9,121)!important;
+            background: linear-gradient(180deg, rgba(9,9,121,0) 40%, rgba(253,160,0,1) 40%, rgba(253,160,0,1) 50%, rgba(253,160,0,1) 60%, rgba(0,212,255,0) 60%)!important;
+            background-size: 35% 100%!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+            }
+
+            .imgcol2{
+                background: rgb(9,9,121)!important;
+                background: linear-gradient(180deg, rgba(9,9,121,0) 40%, rgba(253,160,0,1) 40%, rgba(253,160,0,1) 50%, rgba(253,160,0,1) 60%, rgba(0,212,255,0) 60%)!important;
+                background-size: 35% 100%!important;
+                background-repeat: no-repeat!important;
+                background-position: center!important;
+            }
+            
+            #div-header3{
+                padding: 50px 50px 20px 50px!important;
+            }
+            
+            #div-body3{
+                padding: 30px 0px!important;
+            }
+            
+            #div-header4{
+                padding: 50px 50px 20px 50px!important;
+                
+            }
+            
+            #div-body4{
+            padding: 20px 40px!important;
+            }
+            
+            #div-body4 .center-div1{
+                text-align: center!important;
+                border: transparent!important;
+                padding-bottom: 20px!important;
+            } 
+            
+            #div-body4 .center-div2{
+                text-align: center!important;
+                border-left: transparent!important;
+                border-top: 2px solid #FDA000!important;
+                padding-top: 20px!important;
+            }
+            
+            #div-body4 .center-div1 img{
+                width: 80%;
+                padding-right: 0!important;
+            }
+            
+            #div-body4 .center-div2 img{
+                width: 80%;
+                padding-left: 0!important;
+            }
+            
+            #div-footer4{
+                padding: 50px 50px 20px 50px!important;
+            }
+            
+        }
+        
+        @media only screen and (max-width: 800px){
+            #div-footer2-desktop1, #div-footer2-desktop2{
+                display: none!important;
+            }
+            
+            #div-footer2-mobile{
+                display: block!important;
+            }
+            
+            #div-footer2{
+                display: block!important;
+            }
+        }
+        
+        @media only screen and (max-width: 690px){
+            #div-magui-logo img{
+            width: 45%!important;
+            }
+        }
+        
+        @media only screen and (max-width: 490px){
+            #div-magui-logo img{
+            width: 55%!important;
+            }
+        }
+        
+        @media only screen and (max-width: 390px){
+            #div-magui-logo img{
+            width: 60%!important;
+            }
+        }
+   </style>
+  </head>
+  <body>
+      <section id="presentacion">
+          <div id="div-magui-logo">
+              <img src="https://maguiblock.com/wp-content/uploads/2020/10/logotemplate.png" class="img2" />
+          </div>     
+          
+          <div id="div-header1">
+            <h1 style="font-family: 'Poppins'; font-weight: bold; font-size: 30px; color:#FDA000;">
+                                        ¡Hola *|FNAME|*!
+                                    </h1>
+                                    <h4 style="font-family: 'Poppins'; font-weight: bold; font-size: 18px;">
+                                        ¡Bienvenido al Newsletter semanal!
+                                    </h4>
+         </div>
+          
+          <div id="div-body1">               
+            <p style="font-family: 'Poppins'; font-weight: 500; font-size: 1.2rem; text-align:justify;">
+                Estoy muy contenta porque a partir de hoy, voy a comenzar a enviarte cada lunes un email, con información que te va a ayudar a lograr el cambio que deseas, en todas las áreas de tu vida: familiar, económica, personal, etc.
+               <br>
+               <br>
+               ¿Cómo funcionará la dinámica? Pues, compartiré contigo los videos grabados que estaré publicando en mi canal de Youtube por semana y así puedas aprovechar, todos los beneficios que tienen para ti.
+               <br>
+               <br>
+               También compartiré contigo, las mejores publicaciones de mis Redes Sociales de la semana anterior, para que no te pierdas de nada; así como las noticias y promociones de todos los recursos positivos que con amor voy creando para ti y que están a tu alcance siempre visitando mi página web: <b><a href="https://maguiblock.com/es/" style="color:#564687">Maguiblock</a></b>
+                <br> 
+                <br>
+                Espero que todo esto te sea de provecho y si necesitas ampliar alguna información o aclarar dudas, con gusto te responderé.	   
+            <p>                          
+         </div>
+          
+          <div id="div-footer1">
+            <p style="color:#564687;font-size: 45px">
+                ¡Qué alegría estar en contacto! ¿Te gusta la idea?
+                <br>
+                <span style="color:#FDA000;">¡Comencemos!</span>
+			<p>
+         </div> 
+      </section>
+      
+      <section id="youtube"> 
+          <div id="div-header2">
+            <p style="font-family: 'Poppins'; font-weight: 500; font-size: 1.2rem;">Durante esta semana estaré subiendo los videos que a continuación te indico, junto al día y horario en que podrás verlos (GMT -5 Hora de Ciudad de México).</p>                 
+          </div>
+          
+          <div id="div-header22">
+              <p style="font-family: 'Sacramento'; font-weight: 500; font-size: 39px; color:#564687">Disfruta estas maravillosas herramientas que dispongo para ti para que te liberes y te transformes!</p>
+          </div>
+          
+          <div id="div-body2">     
+              <p style="font-family: 'Poppins'; font-weight: 500; font-size: 1.2rem"><b>Lunes 08:00 pm:</b> ¿Cómo puedes 
+                      <b>ABRIR EL CAMINO</b> de Amor <b>PARA TUS HIJOS?</b>
+                  <p style="font-family: 'Poppins'; font-weight: 500; font-size: 1.2rem">
+                      <b>Jueves 12:00 pm:  APOYA A TUS HIJOS</b> para que vayan a su
+                                <b>VIDA CON LIBERTAD</b> | Constelación Familiar</p>           
+          </div>
+          
+          <div id="div-footer2" style="display: flex">
+              <div id="div-footer2-desktop1">
+                  <img width="70%" src="https://maguiblock.com/wp-content/uploads/2020/10/Group_28.png">
+              </div>
+              <div id="div-footer2-desktop2" style="display: flex; justify-content: center; align-items: center">
+               <div style="vertical-align: middle">
+                   <p style="font-family: 'Poppins'; font-weight: 500; font-size: 1.2rem; margin-bottom: 0px">Ingresa a mi canal de Youtube, suscríbete y activa las notificaciones en la campanita.</p>                            
+              <p style="font-family: 'Sacramento'; font-weight: 500; font-size: 50px;color:#564687;margin-top: 1rem;">¿Cuál te ha llamado más la atención?</p> 
+                  </div>
+              </div>
+              
+                <div id="div-footer2-mobile" style="display: none;">
+                    <p style="font-family: 'Poppins'; font-weight: 500; font-size: 1.2rem; margin-bottom: 0px">Ingresa a mi canal de Youtube, suscríbete y activa las notificaciones en la campanita.</p>              
+              <img width="35%" src="https://maguiblock.com/wp-content/uploads/2020/10/youtube1.png" />
+              <p style="font-family: 'Sacramento'; font-weight: 500; font-size: 50px;color:#564687;margin-top: 1rem;">¿Cuál te ha llamado más la atención?</p> 
+              </div>           
+          </div>
+      </section>
+      
+      <section>
+          <div id="div-header3">
+              <p style="font-family: 'Poppins'; color: #3C2D75; text-align: justify; font-size: 1.2rem"> Durante esta semana, te traigo información muy valiosa en mis redes sociales, ya que te hablo de lo importante que es ocupar tu lugar dentro de tu sistema familiar para que puedas estar atento a esto. Además, la vida muchas veces te presenta opciones, y es importante que sepas qué actitud tomar. <b>Te invito a estar atent@ a lo que estaré compartiendo.</b></p>
+              
+              <h4 style="font-family: 'Poppins'; font-weight: bold; color: #3C2D75; text-align: center">En mis Redes sociales, las mejores publicaciones de la semana anterior, fueron las siguientes:</h4>
+                
+          </div>
+          
+          <div id="div-body3" class="container-fluid">              
+              <div id="row1" class="row">
+                    <div class="col-md-4 imgcol1" style="display: flex;justify-content: center; align-items: center">
+                        <img src="https://maguiblock.com/wp-content/uploads/2020/10/row1.png" />
+                    </div>
+                  
+                    <div class="col-md-8">
+                        <h4 style="font-family: 'Poppins'; font-weight: bold; color: #FDA000; text-align: left">“Acepto mi destino y lo reescribo”</h4>
+                          <p style="font-family: 'Poppins'; color: #3C2D75; font-size: 1.2rem; text-align: justify"> ¿Te has preguntado por qué tienes que enfrentar tantos retos últimamente? 💥
+                            <br/>
+                              <br/>
+                             Cuando no aceptas tu destino o el de otra persona, estás enojado, triste o con miedo y bloqueas la sabiduría de tu sistema. Estás tan enfocado en cambiar lo que sucede, pero no tienes el poder para hacerlo.😌
+                                <br/>
+                              <br/>
+                             En cambio, si aceptas tu destino y el de los demás, enfrentas los puntos de elección desde un lugar centrado y tienes acceso a la sabiduría de tu sistema familiar ¡Acepta lo que es y cada día será mejor!
+                          </p>
+                    </div>
+              </div>  
+              
+              <div id="row2" style="margin-top: 50px" class="row">
+                  <div class="col-md-8">
+                        <h4 style="font-family: 'Poppins'; font-weight: bold; color: #FDA000; text-align: right"> Libérate de lazos tóxicos<br> #MétodoMaguiBlock</h4>
+                          <p style="font-family: 'Poppins'; color: #3C2D75; font-size: 1.2rem; text-align: justify">Antes de que puedas formar una relación sana, necesitas liberarte de lazos tóxicos y para eso debes dejar las cargas que no te pertenecen y renunciar a las metas que no son tuyas. <br><br>Entrega todo lo que no es tuyo, renuncia a cumplir tareas, obligaciones y sueños que le pertenezcan a otros <b>y sé libre para vivir tu vida.</b><br>#MétodoMaguiBlock<br><br>¡Le haces un favor a todos! 💫
+                          </p>
+                    </div>
+                    <div class="col-md-4 imgcol2" style="display: flex;justify-content: center; align-items: center">
+                        <img src="https://maguiblock.com/wp-content/uploads/2020/10/row2.png" />
+                    </div>                                      
+              </div>
+              
+              <div id="row22" class="row" style="display: none; margin-top: 50px">
+                  <div class="col-md-4 imgcol2" style="display: flex;justify-content: center; align-items: center">
+                        <img src="https://maguiblock.com/wp-content/uploads/2020/10/row2.png" />
+                    </div> 
+                  <div class="col-md-8">
+                        <h4 style="font-family: 'Poppins'; font-weight: bold; color: #FDA000; text-align: center"> Libérate de lazos tóxicos #Método<br>MaguiBlock</h4>
+                          <p style="font-family: 'Poppins'; color: #3C2D75; font-size: 1.2rem; text-align: justify">Antes de que puedas formar una relación sana, necesitas liberarte de lazos tóxicos y para eso debes dejar las cargas que no te pertenecen y renunciar a las metas que no son tuyas. <br><br>Entrega todo lo que no es tuyo, renuncia a cumplir tareas, obligaciones y sueños que le pertenezcan a otros <b>y sé libre para vivir tu vida.</b><br>#MétodoMaguiBlock<br><br>¡Le haces un favor a todos! 💫
+                          </p>
+                    </div>                                                         
+              </div> 
+              
+              <div id="row3" class="row" style="margin-top: 50px">
+                    <div class="col-md-4 imgcol1" style="display: flex;justify-content: center; align-items: center">
+                        <img src="https://maguiblock.com/wp-content/uploads/2020/10/row3.png" />
+                    </div>
+                  
+                    <div class="col-md-8">
+                        <h4 style="font-family: 'Poppins'; font-weight: bold; color: #FDA000; text-align: center">Sanando tu familia, sanarás lo demás</h4>
+                          <p style="font-family: 'Poppins'; color: #3C2D75; font-size: 1.2rem; text-align: justify"> Tu familia es sólo uno de los muchos sistemas a los que perteneces.💕 Un sistema es un conjunto de personas que tienen algo en común y tu familia tiene en común la herencia invisible. <br><br>También el país donde vives tiene una herencia invisible, en donde está grabada toda su historia y su cultura. <br><br>Te recomiendo checar mi taller online “Supera los conflictos familiares” haciendo click<a style="color: #3C2D75; font-weight: bold;" href="https://maguiblock.com/es/shop/taller-online/supera-los-conflictos-familiares/"> Aquí.</a> Este taller, te permitirá encontrar la raíz de lo que te impide amar y ser amado por tu familia🌸
+
+                          </p>
+                    </div>
+              </div> 
+          </div>          
+      </section>
+      
+      <section id="tienda">
+          <div id="div-header4">
+              <p style="font-family: 'Poppins'; font-size: 1.2rem">
+                  En la tienda de mi página web:</p>
+              <a id="btn-tienda" style="color: #DD4E8B;border: solid 1px;padding: 5px 15px;border-radius: 20px; text-decoration: none;" href="https://maguiblock.com/es/tienda/">Ir a la tienda</a>
+            <p style="font-family: 'Poppins'; font-size: 1.2rem; margin-top: 1rem;">podrás encontrar la siguiente promoción disponible por pocas semanas.
+              </p>
+          </div>
+          
+          <div id="div-body4">
+              <div class="row">
+                <div class="col-md-6 center-div1" style="text-align: right;border-right: 2px solid #FDA000;">
+                    <img style="padding-right: 20px" width="50%" src="https://maguiblock.com/wp-content/uploads/2020/10/Group-26.png" />
+                </div>
+                 
+                  <div class="col-md-6 center-div2" style="text-align: left;border-left: 2px solid #FDA000;">
+                    <img style="padding-left: 20px" width="40%" src="https://maguiblock.com/wp-content/uploads/2020/10/collageDeclara.png" />
+                </div>
+              </div>
+          </div>
+          
+          <div id="div-footer4">
+              <p style="font-family: 'Poppins'; font-size: 1.2rem; text-align: justify;"><b style="color:#DD4E8B">Combo de las poderosas declaraciones</b> que he tomado de mi Libro <b>“Sana tu Familia”</b> hechas en audio, para que te concentres y las realices, siguiendo mis instrucciones, con un <b style="color:#DD4E8B">20% de descuento.</b><b> ¡Aprovecha esta oportunidad!</b></p>
+          </div>
+      </section>
+      
+      <section id="footer">
+          <div style="text-align: center">
+              <a href="https://www.facebook.com/transformaciondelaconsciencia/"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-facebook-48.png" id="imgFB"></a>
+              <a href="https://www.instagram.com/maguiblock.es/?hl=es-la"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-instagram-48.png" id="imgIG"></a>
+              <a href="https://www.youtube.com/channel/UC0nYvW5XGV7otveshJgVOsA"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-youtube-48.png" id="imgYT"></a>
+          </div>
+          <hr style="width: 30%; border-top: 2px solid #fff;">
+          <div style="text-align: center">
+              <p style="color: #ffffff; font-family: 'Poppins'">Puedes actualizar tus <a style="text-decoration: underline; color:#fff" href="https://maguiblock.us19.list-manage.com/profile?u=1c2aec6c1e375b22a4a9de3e8&id=18336d0a1f&e=[UNIQID]">preferencias</a> o darte de baja de <a style="text-decoration: underline; color: #fff" href="https://maguiblock.us19.list-manage.com/unsubscribe/post">esta lista.</a></p>
+          </div>
+      </section>
+    
+  </body>
+</html>
